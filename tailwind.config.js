@@ -3,10 +3,14 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      height: {
+        68:"17rem"
+       },
       colors:{
         primary1: '#674bb1',
         primary2: '#e980e7',
         button1: '#e980e7',
+        myYellow:"#fec500"
       },
       fontFamily: {
         poppins: ['Poppins'],
@@ -19,7 +23,10 @@ module.exports = {
         (theme)=>({
           desktop: "url('./assets/bg-desktop.svg')",
           mobile: "url('./assets/bg-mobile.svg')",
+          background: "url(https://i.pinimg.com/originals/45/3f/14/453f143ad31ed8482ebed9c4084b8059.jpg)",
         })
+      ,
+      animation: ['motion-safe'],
     },
   },
   variants: {

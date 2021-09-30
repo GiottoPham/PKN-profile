@@ -5,5 +5,11 @@
 @tailwind utilities;
 
 .a1 {
-  @apply block mt-4 lg:mt-0 hover:text-primary1 mr-4;
+  @apply block mt-4 md:inline-block md:mt-0 hover:text-myYellow mr-4 font-bold uppercase pl-5 md:pl-0;
+}
+@layer utilities {
+  .polygonbot {
+    -webkit-clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+    clip-path: polygon(0 14%, 100% 0, 100% 86%, 0% 100%);
+}
 }
